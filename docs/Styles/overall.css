@@ -81,10 +81,15 @@
     margin-top: 20px;
   }
 
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
     nav a {
       margin: 10px 0;
     }
-
+  }
   form {
     max-width: 500px;
     margin: auto;
@@ -150,25 +155,6 @@
     line-height: 1.6;
     font-family: "Press Start 2P";
   }
-  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /* CSS rules for small screens */
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  /* CSS rules for medium screens */
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  /* CSS rules for large screens */
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /* CSS rules for extra large screens */
-}
 
   .social-buttons {
     text-align: center;
