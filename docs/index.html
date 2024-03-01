@@ -1,129 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixelFunk Studios - Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-            position: relative; /* Added to position logo */
-        }
-        header {
-            background-color: #000000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .logo {
-            display: block; /* Changed to block to position properly */
-            position: absolute; /* Added to position logo */
-            left: 20px; /* Added to position logo */
-            top: 20px; /* Added to position logo */
-            width: 80px; /* Adjust size as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
+          "Press Start 2P";
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        position: relative; /* Added to position logo */
+      }
+      header {
+        background-color: #000000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-family: "Press Start 2P", cursive;
+      }
+      .logo {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90px; /* Adjust the top position as needed */
+        width: 300px;
+        height: auto;
+      }
+      nav {
+        background-color: #000000;
+        padding: 10px;
+        text-align: left; /* Align text to the left */
+        border: 4px solid #888888; /* Add a thick gray border */
+        border-radius: 20px; /* Add some rounding to the corners */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a drop shadow */
+        display: flex;
+        flex-direction: column; /* Stack vertically */
+        align-items: left;
+        width: 300px; /* Adjust the width */
+      }
+
+      nav header {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      nav a {
+        display: block; /* Make links stack vertically */
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 5px 0;
+        padding: 8px 20px;
+        border-radius: 20px;
+        background-color: #54a5c6;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #4089a5;
+      }
+
+      section {
+        padding: 50px 20px;
+        text-align: center;
+      }
+      section p {
+        color: #333;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      footer {
+        background-color: #000000;
+        color: #333;
+        text-align: center;
+        padding: 20px 0;
+        position: static;
+        bottom: 0;
+        width: auto;
+      }
+      footer p {
+        margin-top: 20px;
+      }
+      .iframe-container {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: auto;
+        overflow: hidden;
+      }
+
+      .iframe-container iframe {
+        width: 100%;
+        max-width: 800px;
+        border: none;
+        height: 1600px;
+      }
+
+      @media (max-width: 768px) {
         nav {
-            background-color: #000000;
-            padding: 10px 0;
-            text-align: center;
-            display: flex;
-            flex-direction: column; /* Stack vertically */
-            align-items: center; /* Center horizontally */
-        }
-        nav header {
-            color: #fff;
-            font-size: 18px;
-            margin-bottom: 10px;
+          flex-direction: column;
+          align-items: center;
         }
         nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 5px 0; /* Adjust vertical margin */
-            padding: 8px 20px; /* Adjust padding for better button look */
-            border-radius: 20px; /* Add some rounding to the buttons */
-            background-color: #54a5c6; /* Change background color */
-            transition: background-color 0.3s; /* Smooth transition */
+          margin: 10px 0;
         }
-        nav a:hover {
-            background-color: #4089a5; /* Darken background on hover */
-        }
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        section p {
-            color: #333;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #000000;
-            color: #333;
-            text-align: center;
-            padding: 20px 0;
-            position: static;
-            bottom: 0;
-            width: auto;
-        }
-        footer p {
-            margin-top: 20px;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            margin: auto;
-            margin-top: auto;
-            overflow: hidden; 
-        }
-
-        .iframe-container iframe {
-            width: 100%; 
-            max-width: 800px; 
-            border: none; 
-        }
-        
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav a {
-                margin: 10px 0;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://cdn.discordapp.com/attachments/1212268252470968350/1212997311869886464/PFSLogo1.png?ex=65f3dec7&is=65e169c7&hm=7f1e7336cc033500b21a603b89338c66f9779416e583a743280c9031bb9448b1&"
+        alt="Logo"
+        class="logo"
+      />
+      <h1>PixelFunk Studios</h1>
+    </header>
 
-<header>
-    <img src="https://cdn.discordapp.com/attachments/1212268252470968350/1212997311869886464/PFSLogo1.png?ex=65f3dec7&is=65e169c7&hm=7f1e7336cc033500b21a603b89338c66f9779416e583a743280c9031bb9448b1&" alt="Logo" class="logo">
-    <h1>PixelFunk Studios</h1>
-</header>
+    <nav>
+      <header>Site Navigation</header>
+      <a href="about.html">Mission</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-<nav>
-    <header>Site Navigation</header>
-    <a href="about.html">Mission</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <section>
+      <div class="iframe-container">
+        <iframe
+          src="TextPages/welcomepost.html"
+          frameborder="0"
+          width="100%"
+          height="500px"
+        ></iframe>
+      </div>
+    </section>
 
-<section>
-    <div class="iframe-container">
-        <iframe src="TextPages/welcomepost.html" frameborder="0" width="100%" height="500px"></iframe>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 PixelFunk Studios. All rights reserved.</p>
-</footer>
-
-</body>
+    <footer>
+      <p>&copy; 2024 PixelFunk Studios. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

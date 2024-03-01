@@ -1,151 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Astronaut's Observatory!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <style>
-        /* Your CSS styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header {
-            background-color: #000000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #000000;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        form {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #000000;
-            border-radius: 5px;
-        }
-        h2 {
-            text-align: center;
-            color: #fff;
-        }
-        label {
-            font-weight: bold;
-            color: #fff;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #54a5c6;
-            border-radius: 5px;
-            box-sizing: border-box;
-            background-color: #000000;
-            color: #fff;
-        }
-        textarea {
-            height: 150px;
-        }
-        input[type="submit"] {
-            background-color: #000000;
-            color: #fff;
-            border: none;
-            padding: 12px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        input[type="submit"]:hover {
-            background-color: #fff;
-            color:#000000;
-        }
-        footer {
-            background-color: #000000;
-            color: #333;
-            text-align: center;
-            padding: 20px 0;
-            position: static;
-            bottom: 0;
-            width: auto;
-        }
-        footer p {
-            margin-top: 20px;
-        }
-        .social-buttons {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .social-buttons a {
-            display: inline-block;
-            margin: 0 20px;
-            color: #fff;
-            background-color: #000000;
-            padding: 10px;
-            border-radius: 50%;
-            transition: background-color 0.3s ease;
-        }
-        .social-buttons a:hover {
-            background-color: #555;
-        }
-        /* Centering the iframe */
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
+      /* Your CSS styles */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        background-color: #000000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #000000;
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 5px;
+      }
+      h2 {
+        text-align: center;
+        color: #fff;
+      }
+      label {
+        font-weight: bold;
+        color: #fff;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #54a5c6;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #000000;
+        color: #fff;
+      }
+      textarea {
+        height: 150px;
+      }
+      input[type="submit"] {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input[type="submit"]:hover {
+        background-color: #fff;
+        color: #000000;
+      }
+      footer {
+        background-color: #000000;
+        color: #333;
+        text-align: center;
+        padding: 20px 0;
+        position: static;
+        bottom: 0;
+        width: auto;
+      }
+      footer p {
+        margin-top: 20px;
+      }
+      .social-buttons {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .social-buttons a {
+        display: inline-block;
+        margin: 0 20px;
+        color: #fff;
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+      }
+      .social-buttons a:hover {
+        background-color: #555;
+      }
+      /* Centering the iframe */
+      .iframe-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
 
-        .iframe-container iframe {
-            width: 350px;
-        }
-
+      .iframe-container iframe {
+        width: 350px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-</nav>
+    <section>
+      <h2>Contact Us</h2>
 
-<section>
+      <form action="https://formspree.io/f/mbjnywrv" method="POST">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
 
-    <h2>Contact Us</h2>
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
 
-    <form action="https://formspree.io/f/mbjnywrv" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" required></textarea><br />
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
+        <input type="submit" value="Send" />
+      </form>
+    </section>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required></textarea><br>
-
-        <input type="submit" value="Send">
-    </form>
-</section>
-
-<!-- Social Media buttons taken out until things are set up
+    <!-- Social Media buttons taken out until things are set up
     <div class="social-buttons">
         
         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -153,11 +153,18 @@
     </div> -->
 
     <div class="iframe-container">
-        <iframe src="https://discord.com/widget?id=1131336357818671114&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe
+        src="https://discord.com/widget?id=1131336357818671114&theme=dark"
+        width="350"
+        height="500"
+        allowtransparency="true"
+        frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      ></iframe>
     </div>
 
-<footer>
-    <p>&copy; 2024 PixelFunk Studio. All rights reserved.</p>
-</footer>
-</body>
+    <footer>
+      <p>&copy; 2024 PixelFunk Studio. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
