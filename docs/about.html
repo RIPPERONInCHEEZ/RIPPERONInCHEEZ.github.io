@@ -4,51 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixelFunk Studios - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <style>
-      /* Your CSS styles */
+      * {
+        box-sizing: border-box;
+      }
       body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
+          "Press Start 2P";
         margin: 0;
         padding: 0;
         background-color: #000000;
-        color: #54a5c6;
+        color: #bcc4ff;
+        position: relative; /* Added to position logo */
       }
       header {
         background-color: #000000;
         color: #fff;
         padding: 20px;
         text-align: center;
+        font-family: "Press Start 2P", cursive;
       }
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #000000;
-        border-radius: 5px;
+      .logo {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90px; /* Adjust the top position as needed */
+        width: 300px;
+        height: auto;
       }
       nav {
         background-color: #000000;
-        padding: 10px 0;
-        text-align: center;
+        padding: 10px;
+        text-align: left; /* Align text to the left */
+        border: 4px solid #888888; /* Add a thick gray border */
+        border-radius: 20px; /* Add some rounding to the corners */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a drop shadow */
+        display: flex;
+        flex-direction: column; /* Stack vertically */
+        align-items: left;
+        width: 300px; /* Adjust the width */
+      }
+      nav header {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 10px;
       }
       nav a {
-        color: #fff;
+        display: block;
+        padding: 20px 10px;
+        margin: 10px 0;
+        background-color: #0e0e0e; /* Dark slate color */
+        color: #ffffff; /* White text color */
+        border: 2px solid #888888;
+        border-radius: 5px;
+        font-family: "Press Start 2P", Arial, sans-serif;
+        font-size: 12px;
+        text-align: center;
         text-decoration: none;
-        margin: 0 15px;
-        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
       }
       nav a:hover {
-        text-decoration: underline;
+        background-color: #0e0e0e;
+        color: #ffd700; /* Darker color on hover */
       }
       h2 {
         color: #fff;
+        font-family: "Press Start 2P";
       }
       p {
+        font-size: 11px;
         line-height: 1.6;
+        font-family: "Press Start 2P";
       }
       footer {
         background-color: #000000;
@@ -62,33 +96,48 @@
       footer p {
         margin-top: 20px;
       }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 5px;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Mission Statement</h1>
+      <img
+        src="https://cdn.discordapp.com/attachments/1212268252470968350/1212997311869886464/PFSLogo1.png?ex=65f3dec7&is=65e169c7&hm=7f1e7336cc033500b21a603b89338c66f9779416e583a743280c9031bb9448b1&"
+        alt="Logo"
+        class="logo"
+      />
+      <h1>PixelFunk Studios</h1>
     </header>
 
     <nav>
+      <header>Site Navigation</header>
       <a href="index.html">Home</a>
       <a href="contact.html">Contact</a>
     </nav>
 
     <div class="container">
-      <h2>Our Story</h2>
+      <h2>The Story</h2>
       <p>
-        Astronaut's Observatory is a place created by Kevin "cheez" Dickinson.
-        It will hopefully blossom into a place where I can showcase all of my
-        works be it Game Development, Coding, Computer and IT knowledge, Graphic
-        Design, as well as maybe a random blog post or two. It will also be a
-        place I can use to continue to learn HTML. This website will be created
-        interly by myself...Im sure I will update this more in the future.
-      </p>
-
-      <h2>Our Mission</h2>
-      <p>
+        PixelFunk Studios is a pipedream passion project started by Kevin
+        "cheez" Dickinson. It will hopefully blossom into a place where I can
+        showcase all of my works be it Game Development, Coding, Computer and IT
+        knowledge, Graphic Design, as well as maybe a random blog post or two.
+        It will also be a place I can use to continue to learn HTML. This
+        website will be created interly by myself...Im sure I will update this
+        more in the future.
+        <br />
+        <br />
+        <br />
         Currently the mission is to continue learning and hopefully create a
-        cool game and grow and network.
+        cool game and grow and network. I am starting with website design and
+        learning HTML as that will come in handy in the long run and is a good
+        jumping off point.
       </p>
     </div>
 
