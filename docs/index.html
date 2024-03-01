@@ -32,17 +32,26 @@
             padding: 10px 0;
             text-align: center;
             display: flex;
-            flex-direction: row;
-            justify-content: center;
+            flex-direction: column; /* Stack vertically */
+            align-items: center; /* Center horizontally */
+        }
+        nav header {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 25px;
             font-size: 18px;
+            margin: 5px 0; /* Adjust vertical margin */
+            padding: 8px 20px; /* Adjust padding for better button look */
+            border-radius: 20px; /* Add some rounding to the buttons */
+            background-color: #54a5c6; /* Change background color */
+            transition: background-color 0.3s; /* Smooth transition */
         }
         nav a:hover {
-            text-decoration: underline;
+            background-color: #4089a5; /* Darken background on hover */
         }
         section {
             padding: 50px 20px;
@@ -97,6 +106,7 @@
 </header>
 
 <nav>
+    <header>Site Navigation</header>
     <a href="about.html">Mission</a>
     <a href="contact.html">Contact</a>
 </nav>
