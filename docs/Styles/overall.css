@@ -1,4 +1,4 @@
-/* styles.css */
+/* overall.css */
 
 * {
   box-sizing: border-box;
@@ -63,10 +63,7 @@ nav a:hover {
 section {
   padding: 50px 20px;
   text-align: center;
-}
-
-section p {
-  color: #333;
+  color: #bcc4ff;
   font-size: 18px;
   line-height: 1.6;
 }
@@ -79,10 +76,6 @@ footer {
   position: static;
   bottom: 0;
   width: auto;
-}
-
-footer p {
-  margin-top: 20px;
 }
 
 nav a {
@@ -145,20 +138,14 @@ input[type="submit"]:hover {
   color: #ffd700; /* Darker color on hover */
 }
 
-footer {
-  background-color: #000000;
-  color: #333;
-  text-align: center;
-  padding: 20px 0;
-  position: static;
-  bottom: 0;
-  width: auto;
-}
-
 p {
   font-size: 11px;
   line-height: 1.6;
   font-family: "Press Start 2P";
+  color: #bcc4ff;
+  max-width: 800px; /* Adjust the value as needed */
+  max-height: 2000px;
+  margin: 0 auto; /* Center the paragraph horizontally */
 }
 
 .social-buttons {
@@ -197,21 +184,6 @@ p {
   padding: 20px;
   background-color: #000000;
   border-radius: 5px;
-}
-
-.iframe-container {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: auto;
-  overflow: hidden;
-}
-
-.iframe-container iframe {
-  width: 100%;
-  max-width: 800px;
-  border: none;
-  height: 1400px;
 }
 
 .logo {
