@@ -80,12 +80,6 @@ footer {
   width: auto;
 }
 
-nav a {
-  margin: 10px 0;
-  padding: 10px 5px; /* Reduce padding */
-  font-size: 10px; /* Reduce font size */
-}
-
 @media only screen and (max-width: 768px) {
   nav {
     padding: 5px; /* Reduce padding */
