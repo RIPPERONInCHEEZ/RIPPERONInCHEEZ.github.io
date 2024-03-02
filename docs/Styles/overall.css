@@ -30,14 +30,9 @@ nav {
   display: flex;
   flex-direction: column; /* Stack vertically */
   align-items: left;
-  width: 100px; /* Adjust the width */
-  position: fixed;
-  top: 0;
-  transition: top 0.3s;
-}
-
-.nav-hidden {
-  top: -100px; /* Adjust the value based on the height of your navigation bar */
+  width: 300px; /* Adjust the width */
+  position: sticky;
+  top: 20px;
 }
 
 nav header {
@@ -175,7 +170,7 @@ p {
 
 .social-buttons a:hover {
   background-color: #555;
-} */
+} *
 
 /* Centering the iframe */
 .iframe-container {
