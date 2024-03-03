@@ -57,8 +57,9 @@ nav a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-.nav-hidden {
-  transform: translateY(-100%);
+/* Adjust the left position to move the navigation bar off the screen */
+.nav-minimized {
+  transform: translateX(-100%);
   transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
