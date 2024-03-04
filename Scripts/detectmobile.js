@@ -13,12 +13,10 @@ function applyCSS() {
   link.rel = "stylesheet";
 
   if (isMobileDevice()) {
-    link.href =
-      "C:/Users/kdick/Documents/DevelopmentThings/RIPPERONInCHEEZ.github.io/Assets/Styles/mobilestyle.css"; // Update path here
+    link.href = "Styles/mobilestyle.css"; // Update path here
     console.log("Mobile device detected. Applying mobilestyle.css style.");
   } else {
-    link.href =
-      "C:/Users/kdick/Documents/DevelopmentThings/RIPPERONInCHEEZ.github.io/Assets/Styles/overall.css";
+    link.href = "Styles/overall.css";
     console.log("Desktop device detected. Applying overall.css style.");
   }
 
