@@ -1,4 +1,4 @@
-/* overall.css */
+/*mobilestyle.css */
 
 * {
   box-sizing: border-box;
@@ -60,7 +60,7 @@ nav a {
 /* Adjust the left position to move the navigation bar off the screen */
 .nav-minimized {
   transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  transition: transform 0.6s ease-in-out; /* Add a smooth transition effect */
 }
 
 nav a:hover {
@@ -160,25 +160,25 @@ p {
 }
 
 /*.social-buttons {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.social-buttons a {
-  display: inline-block;
-  margin: 0 20px;
-  color: #fff;
-  background-color: #000000;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
-.social-buttons a:hover {
-  background-color: #555;
-} *
-
-/* Centering the iframe */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-buttons a {
+    display: inline-block;
+    margin: 0 20px;
+    color: #fff;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-buttons a:hover {
+    background-color: #555;
+  } *
+  
+  /* Centering the iframe */
 .iframe-container {
   display: flex;
   justify-content: center;
