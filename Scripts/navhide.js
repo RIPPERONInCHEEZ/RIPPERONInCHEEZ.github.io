@@ -19,24 +19,17 @@ function isMobileStyleApplied() {
 // JavaScript code to toggle the .nav-minimized class on scroll if mobile.css is applied
 
 window.addEventListener("scroll", () => {
-  // Check if mobile.css is applied before executing the script
+  const navbar = document.querySelector("nav");
   if (isMobileStyleApplied()) {
-    const navbar = document.querySelector("nav");
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
       // User is scrolling down
+      navbar.classList.remove("nav-visible");
       navbar.classList.add("nav-minimized");
-      isScrollingUp = false;
     } else {
       // User is scrolling up
-      if (!isScrollingUp) {
-        // Add a delay before removing the class to make the reappearance smoother
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-          navbar.classList.remove("nav-minimized");
-        }, 300); // Adjust the delay time as needed
-        isScrollingUp = true;
-      }
+      navbar.classList.remove("nav-minimized");
+      navbar.classList.add("nav-visible");
     }
     lastScrollTop = scrollTop;
   }
