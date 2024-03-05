@@ -57,17 +57,6 @@ nav a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-/* Adjust the left position to move the navigation bar off the screen */
-.nav-minimized {
-  transform: translateX(-100%);
-  transition: transform 0.6s ease-in-out; /* Add a smooth transition effect */
-}
-
-.nav-visible {
-  transform: translateX(0);
-  transition: transform 0.6s ease-in-out; /* Add a smooth transition effect */
-}
-
 nav a:hover {
   background-color: #0e0e0e;
   color: #ffd700; /* Darker color on hover */
@@ -156,33 +145,39 @@ input[type="submit"]:hover {
 p {
   font-size: 11px;
   line-height: 1.6;
-  font-family: "Press Start 2P";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #bcc4ff;
   max-width: 800px; /* Adjust the value as needed */
   max-height: 2000px;
   margin: 0 auto; /* Center the paragraph horizontally */
 }
 
-/*.social-buttons {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .social-buttons a {
-    display: inline-block;
-    margin: 0 20px;
-    color: #fff;
-    background-color: #000000;
-    padding: 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-  }
-  
-  .social-buttons a:hover {
-    background-color: #555;
-  } *
-  
-  /* Centering the iframe */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  width: 30px; /* Adjust the size of the icons */
+  height: 30px; /* Adjust the size of the icons */
+  border-radius: 50%; /* Make the icons circular */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  display: inline-block;
+  margin: 0 10px; /* Adjust margin as needed */
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 100px;
+  color: #888888;
+}
+
+.social-links a:hover {
+  transform: scale(1.2); /* Increase the size of the icons on hover */
+  color: #ffd700;
+}
+
+/* Centering the iframe */
 .iframe-container {
   display: flex;
   justify-content: center;
@@ -209,4 +204,25 @@ p {
   top: 90px; /* Adjust the top position as needed */
   width: 300px;
   height: auto;
+}
+
+.indextext {
+  font-size: 11px;
+  line-height: 1.6;
+  font-family: "Press Start 2P";
+  color: #bcc4ff;
+  max-width: 800px; /* Adjust the value as needed */
+  max-height: 2000px;
+  margin: 0 auto; /* Center the paragraph horizontally */
+}
+
+/* Adjust the left position to move the navigation bar off the screen */
+.nav-minimized {
+  transform: translateX(-100%);
+  transition: transform 0.6s ease-in-out; /* Add a smooth transition effect */
+}
+
+.nav-visible {
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out; /* Add a smooth transition effect */
 }

@@ -110,16 +110,23 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 5px;
-  margin-bottom: 10px; /* Decrease the margin-bottom to make the form boxes closer together */
-  border: 1px solid #54a5c6;
+  margin-bottom: 5px; /* Decrease the margin-bottom to make the form boxes closer together */
+  border: 1px solid #888888;
   border-radius: 5px;
   box-sizing: border-box;
   background-color: #000000;
   color: #fff;
 }
 
+input[type="name"],
+input[type="email"],
+textarea::selection {
+  border-color: #ffd700;
+}
+
 textarea {
   height: 150px;
+  border-color: #ffd700;
 }
 
 input[type="submit"] {
@@ -153,34 +160,29 @@ p {
   margin: 0 auto; /* Center the paragraph horizontally */
 }
 
-.indextext {
-  font-size: 11px;
-  line-height: 1.6;
-  font-family: "Press Start 2P";
-  color: #bcc4ff;
-  max-width: 800px; /* Adjust the value as needed */
-  max-height: 2000px;
-  margin: 0 auto; /* Center the paragraph horizontally */
-}
-
-/*.social-buttons {
-  text-align: center;
+.social-links {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
-.social-buttons a {
+.social-links a {
+  width: 30px; /* Adjust the size of the icons */
+  height: 30px; /* Adjust the size of the icons */
+  border-radius: 50%; /* Make the icons circular */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
   display: inline-block;
-  margin: 0 20px;
-  color: #fff;
-  background-color: #000000;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
+  margin: 0 10px; /* Adjust margin as needed */
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 100px;
+  color: #888888;
 }
 
-.social-buttons a:hover {
-  background-color: #555;
-} *
+.social-links a:hover {
+  transform: scale(1.2); /* Increase the size of the icons on hover */
+  color: #ffd700;
+}
 
 /* Centering the iframe */
 .iframe-container {
@@ -209,4 +211,14 @@ p {
   top: 90px; /* Adjust the top position as needed */
   width: 300px;
   height: auto;
+}
+
+.indextext {
+  font-size: 11px;
+  line-height: 1.6;
+  font-family: "Press Start 2P";
+  color: #bcc4ff;
+  max-width: 800px; /* Adjust the value as needed */
+  max-height: 2000px;
+  margin: 0 auto; /* Center the paragraph horizontally */
 }
