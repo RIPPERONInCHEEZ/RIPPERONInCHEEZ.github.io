@@ -82,11 +82,10 @@ section {
 }
 
 footer {
-  background-color: #000000;
   color: #333;
   text-align: center;
   padding: 20px 0;
-  position: relative;
+  position: static;
   bottom: 0;
   width: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
