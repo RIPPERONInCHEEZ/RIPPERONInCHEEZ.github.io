@@ -151,6 +151,7 @@ p {
   max-width: 800px; /* Adjust the value as needed */
   max-height: 2000px;
   margin: 0 auto; /* Center the paragraph horizontally */
+  text-align: center;
 }
 
 .social-links {
